@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>MC test webview</title>
+</head>
+
+
+<script language="javascript">
+        /* This function is invoked by the activity */
+        var flag = true;
+        function wave()
+        {
+
+            if(flag)
+            {
+                alert(flag);
+                document.getElementById("droid").src="ic_launcher.png";
+                flag = false;
+            }
+            else
+            {
+                window.demo.loadBaidu();
+                flag = true;
+            }
+        }
+
+        function call()
+        {
+            alert(demo.toString);
+        }
+
+
+</script>
+<body>
+<!-- Calls into the javascript interface for the activity -->
+<a onClick="call()">
+    <div style="width:80px;
+            margin:0px auto;
+            padding:10px;
+            text-align:center;
+            border:2px solid #202020;">
+        <img id="droid" src="ic_launcher-web.png"/><br>
+        Click me!
+    </div>
+</a>
+</body>
+</html>

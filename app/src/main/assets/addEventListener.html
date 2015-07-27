@@ -1,0 +1,27 @@
+<html>
+<body>
+
+<table id="outside">
+    <tr>
+        <td id="t1">one</td>
+    </tr>
+    <tr>
+        <td id="t2">two</td>
+    </tr>
+</table>
+<script>// 改变t2的函数
+function modifyText() {
+  var t2 = document.getElementById("t2");
+  if (t2.firstChild.nodeValue == "three") {
+    t2.firstChild.nodeValue = "two";
+  } else {
+    t2.firstChild.nodeValue = "three";
+  }
+}
+
+// 为table添加事件监听器
+var el = document.getElementById("outside");
+el.addEventListener("click", modifyText, false);
+</script>
+</body>
+</html>
