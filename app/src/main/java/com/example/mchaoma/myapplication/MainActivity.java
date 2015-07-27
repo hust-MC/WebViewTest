@@ -29,6 +29,9 @@ public class MainActivity extends Activity {
     private WebView mWebView;
     private Handler mHandler = new Handler();
 
+/**
+ * 获取网页cookie
+ * /
     public String getCookie(Context context) {
         CookieManager cookieManager = CookieManager.getInstance();
         String cookie = cookieManager.getCookie("cookie");
