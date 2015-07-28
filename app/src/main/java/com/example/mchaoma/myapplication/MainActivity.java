@@ -65,6 +65,9 @@ public class MainActivity extends Activity {
         mWebView.loadUrl("file:///android_asset/mc.html");
     }
 
+/**
+ * JavaScript接口类
+ * /
     final class DemoJavaScriptInterface {
         @JavascriptInterface
         public void loadBaidu() throws ClassNotFoundException {
